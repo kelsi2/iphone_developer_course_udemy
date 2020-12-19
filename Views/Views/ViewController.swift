@@ -1,19 +1,17 @@
-//
-//  ViewController.swift
-//  Views
-//
-//  Created by Kelsi Proulx on 2020-12-19.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var containerView: UIView!
+    
+    @IBOutlet weak var myTextView: UITextView!
+    
+    @IBAction func removeFunction(_ sender: Any) {
+//        myTextView.removeFromSuperview()
+        //Using isHidden we can make another toggle to reveal it again instead of completely removing it
+        myTextView.isHidden = true
+        
+        containerView.backgroundColor = UIColor.darkGray
     }
-
-
 }
 
